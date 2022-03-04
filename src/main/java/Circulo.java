@@ -1,23 +1,38 @@
 public class Circulo {
-    public double radio;
+    private double radio;
 
-    public double getRadio() {
+    private double getRadio() {
         return radio;
     }
 
-    public void setRadio(double radio) {
+    private void setRadio(double radio) {
         this.radio = radio;
     }
 
-    public double calculararea(){
+    private double calculararea(){
         double area;
                 area = (3.1416*Math.pow(radio,2));
         return area;
     }
 
-    public double calculardiametro(){
-
+    private double calculardiametro(){
+        double diametro;
+                diametro = (radio*2);
+                return diametro;
     }
 
-    public double calcularcircunferencia
+    private double calcularcircunferencia(){
+        double circunferencia;
+            circunferencia = 3.1416 * (2*radio);
+        return circunferencia;
+    }
+
+    public Circulo(){
+        System.out.println("No sirvo para nada");
+    }
+
+    public Circulo(){
+
+    }
 }
+
