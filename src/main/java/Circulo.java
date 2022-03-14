@@ -1,38 +1,89 @@
 public class Circulo {
+
     private double radio;
 
+
+
     private double getRadio() {
+
         return radio;
+
     }
+
+
 
     private void setRadio(double radio) {
+
         this.radio = radio;
+
     }
 
-    private double calculararea(){
+
+
+    public double calculararea(){
+
         double area;
-                area = (3.1416*Math.pow(radio,2));
+
+        area = (3.1416*Math.pow(radio,2));
+
         return area;
+
     }
 
-    private double calculardiametro(){
+
+
+    public double calculardiametro(){
+
         double diametro;
-                diametro = (radio*2);
-                return diametro;
+
+        diametro = (radio*2);
+
+        return diametro;
+
     }
 
-    private double calcularcircunferencia(){
+
+
+    public double calcularcircunferencia(){
+
         double circunferencia;
-            circunferencia = 3.1416 * (2*radio);
+
+        circunferencia = 3.1416 * (2*radio);
+
         return circunferencia;
+
     }
 
+
+
     public Circulo(){
+
         System.out.println("No sirvo para nada");
-    }
-
-    public Circulo(){
 
     }
+
+
+
+    public Circulo(double radio){
+
+        this.radio = radio;
+
+    }
+
+
+
+    @Override
+
+    public String toString() {
+
+        return "El circulo tiene un radio de " +radio
+
+                + "\n El área del círculo es " + calculararea()
+
+                + "\n El diámetro del círculo es " +calculardiametro()
+
+                + "\n La circunferencia del círculo es " +calcularcircunferencia();
+
+    }
+
 }
-
